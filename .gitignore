@@ -1,5 +1,35 @@
-tmp/*
-config/database.php
-app/tmp/*
-app/config/database.php
-!empty
+#
+# System SWAP, TMP and BACKUP files ###
+#/Config/*
+#/Config/Schema/*
+*~
+*.swp
+*.bak
+### Mac OS X directory preferences ###
+.DS_Store
+### Config stuffs
+/Config/*
+#/Config/Schema/*
+### CakePHP tmp content ###
+/tmp/*
+/tmp/cache/*
+/tmp/logs/*
+/tmp/sessions/*
+/tmp/tests/*
+/tmp/cache/models/*
+/tmp/cache/persistent/*
+/tmp/cache/views/*
+/tmp/logs/*
+/tmp/sessions/*
+/tmp/tests/*
+#*/tmp/cache/*
+#*/tmp/logs/*
+#*/tmp/sessions/*
+#*/tmp/tests/*
+#ignore thumbnails created by windows ;)
+Thumbs.db
+### Some webroot files. TODO uses themes instead
+#/webroot/css/app/*
+#/webroot/files/app/*
+#/webroot/img/app/*
+#/webroot/js/app/*
