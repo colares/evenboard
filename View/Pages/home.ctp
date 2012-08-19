@@ -2,7 +2,7 @@
 
 			$(function () {
 				$('#defaultCountdown').countdown({
-					until: new Date(2012, 8-1, 19, 22, 30, 00),
+					until: new Date(2012, 8-1, 19, 18, 00, 00),
 					format: "HMS",
 					regional: 'pt-BR'
 				});
@@ -17,6 +17,7 @@
 				<div id="defaultCountdown" ></div>		
 		</div>
 		<br>
+		<?php //if isset($messageuuuu)  ?>
       	<div class="row-fluid">
 			<div class="alert alert-notice rounded" style="height:100px">
 				<h2><em><?php print $message; ?></em></h2>

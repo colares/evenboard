@@ -10,7 +10,7 @@ body {}
 -moz-border-radius: 30px; 
 -webkit-border-radius: 30px; 
 
-width:500px;
+/*width:500px;*/
 text-align: center;
 
 
@@ -53,17 +53,17 @@ background: url('../img/logo.png') #fff no-repeat 950px 230px;
 .countdown_section {
 	display: block;
 	float: left;
-	font-size: 150%;
+	font-size: 145%;
 	text-align: center;
-	width: 450px !important;
+	width: 460px !important;
 	margin: 0px auto;
-	padding: 20px 0px 20px 0px;
+	padding: 10px 0px 10px 0px;
 }
 .countdown_amount {
 	font-size: 1700%;
-	width: 450px;
+	width: 460px;
 	display: block;
-	line-height: 315px
+	line-height: 300px;
 }
 .countdown_descr {
 	display: block;
@@ -76,8 +76,8 @@ background: url('../img/logo.png') #fff no-repeat 950px 230px;
 
 	$(function () {
 		$('#defaultCountdown').countdown({
-			until: "+60s",
-			format: "S",
+			until: "+<?php print $minutes; ?>m",
+			format: "MS",
 			regional: 'pt-BR'
 		});
 		$('#defaultCountdown').countdown('pause');
@@ -101,6 +101,7 @@ background: url('../img/logo.png') #fff no-repeat 950px 230px;
 
 
 </script>
+
 <div class="row-fluid" style="height:405px">
 	<div class="span12"> 
 

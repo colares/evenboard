@@ -79,7 +79,16 @@ class PagesController extends AppController {
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 
 		$message = $this->Message->find('first');
-		$this->set('message', $message['Message']['message']);
+		if ($message) {
+			$this->set('message', $message['Message']['message']);	
+		}
+
+		if ($this->Session->check('Minutes')) {
+			$this->set('minutes', $this->Session->read('Minutes'));
+		} else {
+			$this->set('minutes', 1);
+		}
+
 
 		$this->render(implode('/', $path));
 	}
